@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: MyWeb
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://182.92.160.29:3306/MyWeb
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 10485760
+      enabled: true
+      max-request-size: 10485760
+com:
+  czxy:
+    jwtconfig:
+      pubKeyPath: D://project/MySchool/password/ras.pub # 公钥位置
+      priKeyPath: D://project/MySchool/password/ras.pri # 私钥位置
+    upload:
+      image-path: D://project/MySchool/file/image # 图片上传路径
